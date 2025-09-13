@@ -1,0 +1,125 @@
+/* Global */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fdf0ff, #ffe6f7, #fff3e6);
+  color: #333;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin: 40px 0 30px;
+  color: #4b1459;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Table */
+.table-container {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  padding: 0 15px;
+  overflow-x: auto;
+  animation: slideUp 1.2s ease;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+}
+
+thead {
+  background: linear-gradient(135deg, #8a2be2, #d63384, #fd7e14);
+  color: #fff;
+}
+
+thead th {
+  padding: 18px 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+tbody td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+
+tbody tr:hover td {
+  background: rgba(138, 43, 226, 0.08);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Highlight Pro column */
+.highlight {
+  background: rgba(138, 43, 226, 0.07);
+  font-weight: 600;
+}
+
+thead .highlight {
+  background: #6f1ab6;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #8a2be2, #d63384);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(138, 43, 226, 0.3);
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(214, 51, 132, 0.4);
+}
+
+/* Featured Button */
+.featured {
+  background: linear-gradient(135deg, #fd7e14, #ff4757);
+  box-shadow: 0 4px 10px rgba(253, 126, 20, 0.3);
+}
+
+.featured:hover {
+  box-shadow: 0 6px 18px rgba(255, 71, 87, 0.5);
+}
+
+/* Footer */
+footer {
+  background: #4b1459;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.95rem;
+  animation: fadeIn 1.5s ease;
+}
+
+footer .name {
+  color: #ffb703;
+  font-weight: 600;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,179 @@
+/* ================================
+   Global Styles
+================================== */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #2d2d2d;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+  color: #1a1a1a;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+/* Links */
+a {
+  color: #0d6efd;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: #0a58ca;
+  text-decoration: underline;
+}
+
+/* ================================
+   Navbar
+================================== */
+.navbar {
+  padding: 1rem 0;
+}
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+}
+.navbar-nav .nav-link {
+  margin-left: 1rem;
+  font-weight: 500;
+  color: #444 !important;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #0d6efd !important;
+}
+
+/* ================================
+   Hero Section
+================================== */
+.hero {
+  background: linear-gradient(to right, #fdfdfd, #f8f8f8);
+}
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.hero p {
+  font-size: 1.15rem;
+  color: #666;
+}
+
+/* ================================
+   Blog Cards
+================================== */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+.card img {
+  height: 230px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+.card-body {
+  padding: 1.25rem;
+}
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #1a1a1a;
+}
+.card-text {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Read More Link */
+.card a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0d6efd;
+}
+.card a:hover {
+  color: #0a58ca;
+  text-decoration: underline;
+
+}
+
+/* ================================
+   Sidebar
+================================== */
+.sidebar-box {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  margin-bottom: 1.5rem;
+}
+.sidebar-box h5 {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+.sidebar-box ul li {
+  margin-bottom: 0.7rem;
+}
+.sidebar-box a {
+  color: #555;
+  font-size: 0.95rem;
+}
+.sidebar-box a:hover {
+  color: #0d6efd;
+}
+
+.d{
+    color: #666;
+    opacity: 0.75;
+}
+
+.d:hover {
+    color: #0d6efd;
+    font-weight: 600;
+    opacity: 1;
+    text-decoration: none;
+    animation-duration: 1s;
+    /* transform: translateY(6px); */
+    /* shadow: 0 8px 24px rgba(0,0,0,0.1);   */
+   
+}
+
+/* Newsletter Input */
+.sidebar-box input[type="email"] {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.95rem;
+}
+.sidebar-box button {
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* ================================
+   Footer
+================================== */
+footer {
+  background: #f5f5f5;
+  border-top: 1px solid #eaeaea;
+}
+footer p {
+  color: #666;
+  margin: 0.3rem 0;
+}
+footer strong {
+  color: #0d6efd;
+}

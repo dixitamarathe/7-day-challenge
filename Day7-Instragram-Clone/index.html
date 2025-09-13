@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/insta.png">
+  <title>Instagram Clone</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-light bg-white border-bottom sticky-top">
+    <div class="container d-flex justify-content-between">
+      <a class="navbar-brand fw-bold fs-4" href="#">Instagram</a>
+      <form class="d-none d-md-block">
+        <input class="form-control form-control-sm text-center" type="search" placeholder="Search">
+      </form>
+      <div>
+        <i class="bi bi-house-door-fill fs-4 me-3"></i>
+        <i class="bi bi-chat fs-4 me-3"></i>
+        <i class="bi bi-plus-square fs-4 me-3"></i>
+        <i class="bi bi-heart fs-4 me-3"></i>
+        <i class="bi bi-person-circle fs-4"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <div class="container mt-3">
+    <div class="row justify-content-center">
+      <!-- Feed Section -->
+      <div class="col-md-7">
+        
+        <!-- Stories -->
+        <div class="d-flex overflow-auto border rounded bg-white p-2 mb-3">
+          <div class="text-center me-3">
+            <img src="https://picsum.photos/60?random=1" class="rounded-circle story-img">
+            <small class="d-block">You</small>
+          </div>
+          <div class="text-center me-3">
+            <img src="https://picsum.photos/60?random=2" class="rounded-circle story-img">
+            <small class="d-block">Alex</small>
+          </div>
+          <div class="text-center me-3">
+            <img src="https://picsum.photos/60?random=3" class="rounded-circle story-img">
+            <small class="d-block">Sara</small>
+          </div>
+          <div class="text-center me-3">
+            <img src="https://picsum.photos/60?random=4" class="rounded-circle story-img">
+            <small class="d-block">John</small>
+          </div>
+          <div class="text-center me-3">
+            <img src="https://picsum.photos/60?random=5" class="rounded-circle story-img">
+            <small class="d-block">Emma</small>
+          </div>
+        </div>
+
+        <!-- Post 1 -->
+        <div class="card mb-4">
+          <div class="card-header bg-white d-flex align-items-center">
+            <img src="https://picsum.photos/40?random=10" class="rounded-circle me-2">
+            <strong>alex_92</strong>
+          </div>
+          <img src="https://picsum.photos/600/400?random=11" class="card-img-top">
+          <div class="card-body">
+            <div class="mb-2">
+              <i class="bi bi-heart fs-4 me-3"></i>
+              <i class="bi bi-chat fs-4 me-3"></i>
+              <i class="bi bi-send fs-4"></i>
+            </div>
+            <p class="fw-bold mb-1">1,024 likes</p>
+            <p><strong>alex_92</strong> Enjoying the sunny vibes 🌞</p>
+            <p class="text-muted small">View all 45 comments</p>
+            <input type="text" class="form-control border-0 border-top" placeholder="Add a comment...">
+          </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="card mb-4">
+          <div class="card-header bg-white d-flex align-items-center">
+            <img src="https://picsum.photos/40?random=12" class="rounded-circle me-2">
+            <strong>sara_life</strong>
+          </div>
+          <img src="https://picsum.photos/600/400?random=13" class="card-img-top">
+          <div class="card-body">
+            <div class="mb-2">
+              <i class="bi bi-heart fs-4 me-3"></i>
+              <i class="bi bi-chat fs-4 me-3"></i>
+              <i class="bi bi-send fs-4"></i>
+            </div>
+            <p class="fw-bold mb-1">2,378 likes</p>
+            <p><strong>sara_life</strong> Coffee date ☕✨</p>
+            <p class="text-muted small">View all 112 comments</p>
+            <input type="text" class="form-control border-0 border-top" placeholder="Add a comment...">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
